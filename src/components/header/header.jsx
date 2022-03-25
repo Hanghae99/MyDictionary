@@ -1,14 +1,20 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./header.css";
 
 const Header = (props) => {
+  const navigate = useNavigate();
   return (
     <>
-      <div>
-        <div className="top-border">
-          <h1 className="title-name">My Dictionary</h1>
-        </div>
-        <button className="addBtn">Add Word 😆</button>
+      <div className="top-border">
+        <h1
+          className="title-name"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          My Dictionary
+        </h1>
       </div>
     </>
   );

@@ -1,0 +1,34 @@
+.wrap {
+  font-size: large;
+  margin: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 25px;
+  border-style: none;
+  padding: 15px 60px;
+  margin-left: 210px;
+  margin-top: 20px;
+  background-color: cornflowerblue;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: rgb(70, 70, 70);
+  background-color: rgb(245, 185, 73);
+}
+
+.inputVal {
+  border-style: none;
+  border-bottom: 0.5px solid rgba(95, 95, 95, 0.7);
+  padding: 20px;
+  width: 500px;
+  margin-left: 15px;
+  outline: none;
+  font-size: 18px;
+}
