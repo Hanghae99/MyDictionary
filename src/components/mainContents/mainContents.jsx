@@ -1,9 +1,21 @@
 import React from "react";
+import Card from "../card/card";
 
 const MainContents = (props) => {
   return (
     <>
-      <h1>hi</h1>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </>
   );
 };

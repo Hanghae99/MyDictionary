@@ -1,4 +1,5 @@
 .top-border {
+  margin-left: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,4 +13,25 @@
   color: cornflowerblue;
   font-size: 30px;
   font-weight: 500;
+}
+
+.addBtn {
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 810px;
+  border-style: none;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  padding: 10px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.addBtn:hover {
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+  background-color: rgb(245, 185, 73);
 }

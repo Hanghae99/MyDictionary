@@ -3,9 +3,14 @@ import "./header.css";
 
 const Header = (props) => {
   return (
-    <div className="top-border">
-      <h1 className="title-name">My Dictionary :)</h1>
-    </div>
+    <>
+      <div>
+        <div className="top-border">
+          <h1 className="title-name">My Dictionary</h1>
+        </div>
+        <button className="addBtn">Add Word 😆</button>
+      </div>
+    </>
   );
 };
 

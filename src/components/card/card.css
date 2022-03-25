@@ -1,0 +1,74 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  float: left;
+  margin-left: 60px;
+}
+
+.border-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dictionary-card {
+  border: 2px solid rgb(163, 185, 226);
+  width: 450px;
+  height: 80%;
+  border-radius: 30px;
+  margin: 30px;
+}
+
+.card-btn {
+  margin: 10px;
+}
+
+.check {
+  border-style: none;
+  margin: 5px;
+  background-color: rgb(245, 185, 73);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.edit {
+  border-style: none;
+  margin-right: 5px;
+  background-color: rgb(245, 185, 73);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove {
+  border-style: none;
+  background-color: rgb(245, 185, 73);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dictionary-card-check {
+  background-color: rgb(163, 185, 226);
+  width: 450px;
+  height: 80%;
+  border-radius: 30px;
+  margin: 30px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+  align-items: center;
+}
+
+.card-contents {
+  margin: 10px;
+}
+
+.blue {
+  margin: 0;
+  font-size: small;
+  color: rgb(69, 117, 206);
+}
