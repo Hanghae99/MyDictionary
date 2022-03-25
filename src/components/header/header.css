@@ -1,0 +1,15 @@
+.top-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  background-color: cornsilk;
+}
+
+.title-name {
+  color: cornflowerblue;
+  font-size: 30px;
+  font-weight: 500;
+}
