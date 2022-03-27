@@ -5,11 +5,15 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "@fortawesome/fontawesome-free/js/all.js";
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./components/redux/store";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
   document.getElementById("root")
 );
 

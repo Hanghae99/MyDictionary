@@ -1,21 +1,28 @@
-.wrap {
-  font-size: large;
-  margin: 150px;
+.form-wrapper {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.form-dictionary {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
 }
 
 .btn {
   font-size: 25px;
   border-style: none;
   padding: 15px 60px;
-  margin-left: 210px;
-  margin-top: 20px;
   background-color: cornflowerblue;
   color: rgb(255, 255, 255);
   font-weight: 700;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .btn:hover {
@@ -26,9 +33,8 @@
 .inputVal {
   border-style: none;
   border-bottom: 0.5px solid rgba(95, 95, 95, 0.7);
-  padding: 20px;
+  padding: 20px 0;
   width: 500px;
-  margin-left: 15px;
   outline: none;
   font-size: 18px;
 }
