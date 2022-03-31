@@ -1,22 +1,23 @@
-.wrapper {
+/* .wrapper {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   float: left;
   margin-left: 60px;
-}
+} */
 
 .border-box {
-  display: flex;
+  width: 28vw;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .dictionary-card {
   border: 1.5px solid rgb(163, 185, 226);
   width: 450px;
-  height: 80%;
+  /* height: 80%; */
   border-radius: 30px;
   margin: 30px;
   padding: 3px;
@@ -66,10 +67,16 @@
 
 .card-contents {
   margin: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .blue {
   margin: 0;
   font-size: small;
   color: rgb(69, 117, 206);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

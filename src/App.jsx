@@ -11,11 +11,14 @@ import {
   getDocs,
   addDoc,
   updateDoc,
+  deleteDoc,
+  doc,
 } from "firebase/firestore";
 import { loadDicFB } from "./components/redux/modules/card";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 function App() {
+  const dictionaryList = useSelector((state) => state.card.dictionaryList);
   const dispatch = useDispatch();
 
   useEffect(async () => {

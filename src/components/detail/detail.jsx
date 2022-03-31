@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { addDicFB, createCard } from "../redux/modules/card";
 import { createId } from "../../utils/common";
 import { addDocFB } from "../redux/modules/card";
@@ -13,6 +13,7 @@ const Detail = (props) => {
   const dispatch = useDispatch();
   const [formValues, setFormValues] = useState({
     // id: 0,
+    completed: false,
     word: "",
     mean: "",
     example: "",

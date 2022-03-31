@@ -6,6 +6,7 @@ import {
   addDoc,
   updateDoc,
   deleteDoc,
+  doc,
 } from "firebase/firestore";
 
 /* 액션 타입 만들기 */
@@ -14,12 +15,14 @@ import {
 const POST_CARD = "POST_CARD";
 const DELETE_CARD = "DELETE_CARD";
 const LOAD = "LOAD";
+const UPDATE = "UPDATE";
 
 /* 액션 생성함수 만들기 */
 // 액션 생성함수를 만들고 export 키워드를 사용해서 내보내주세요.
 export const createCard = (data) => ({ type: POST_CARD, payload: data });
 export const deleteCard = (idx) => ({ type: DELETE_CARD, payload: idx });
 export const loadCard = (data) => ({ type: LOAD, payload: data });
+export const updateCard = (data) => ({ type: UPDATE, payload: data });
 
 /* 초기 상태 선언 */
 const initialState = {
@@ -51,6 +54,18 @@ export const addDicFB = (dictionary) => {
   };
 };
 
+export const updateDicFB = (dictionary_id) => {
+  return async function (dispatch) {
+    console.log(dictionary_id);
+    const docRef = doc(db, "dictionary", dictionary_id);
+    await updateDoc(docRef, { completed: true });
+  };
+};
+
+export const deleteDicFB = (dictionary_id) => {
+  return async function (dispatch) {};
+};
+
 /* 리듀서 선언 */
 // 리듀서는 export default 로 내보내주세요.
 export function counter(state = initialState, action) {
@@ -62,6 +77,11 @@ export function counter(state = initialState, action) {
       };
     case DELETE_CARD: {
       console.log(state, action);
+
+      const newList = state.dictionaryList.filter((i, idx) => {
+        return parseInt(action.idx) !== idx;
+      });
+
       return state;
     }
     case LOAD: {
