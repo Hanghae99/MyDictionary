@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteCard, updateDicFB } from "../redux/modules/card";
+import { deleteDicFB, updateDicFB } from "../redux/modules/card";
 import "./card.css";
 
 const Card = ({ item }) => {
@@ -31,8 +31,8 @@ const Card = ({ item }) => {
                 <button
                   className="remove"
                   onClick={() => {
-                    dispatch(deleteCard(item.id));
-                    console.log("삭제할거야!");
+                    dispatch(deleteDicFB(item.id));
+                    console.log(item.id);
                   }}
                 >
                   <i className="fa-solid fa-trash"></i>

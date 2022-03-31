@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# 🔖 4주차 리액트 숙련, 나만의 단어장 만들기 🔖
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+##Goal : 내가 모르는단어, 기억하고싶은 단어를 기록하고 암기하는 My Dictionary :)
 
-In the project directory, you can run:
+## 학습과제
 
-### `yarn start`
+## `게시글 목록 페이지`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 게시글 목록을 화면에 그리기 (뷰는 각각 카드뷰로 만들기)
+- 게시글 내 [예문은 파란글씨로 보여주기](http://localhost:3000)
+- 게시글 목록을 리덕스에서 관리
+- 게시글 목록을 FirStore에서 가져오기
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img width="1749" alt="스크린샷 2022-03-31 오후 10 11 23" src="https://user-images.githubusercontent.com/89297158/161062546-4fc037b6-5b6b-4f78-93a7-b9b443a209f0.png">
 
-### `yarn test`
+## `게시글 작성 페이지`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 게시글 작성에 필요한 Input 3개를 Ref로 관리
+- 작성한 게시글, 리덕스 내 게시글 목록에 추가
+- 게시글 목록을 파이어스토어에 저장
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1545" alt="스크린샷 2022-03-31 오후 10 12 17" src="https://user-images.githubusercontent.com/89297158/161062754-188225e1-a705-49ba-9265-c805b5878f40.png">

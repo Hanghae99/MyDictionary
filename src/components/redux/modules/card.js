@@ -62,8 +62,14 @@ export const updateDicFB = (dictionary_id) => {
   };
 };
 
-export const deleteDicFB = (dictionary_id) => {
-  return async function (dispatch) {};
+export const deleteDicFB = (idx) => {
+  return async function (dispatch) {
+    const docRef = doc(db, "dictionary", idx);
+    await deleteDoc(docRef);
+
+    dispatch(deleteCard(idx));
+    console.log(idx);
+  };
 };
 
 /* 리듀서 선언 */
@@ -79,10 +85,13 @@ export function counter(state = initialState, action) {
       console.log(state, action);
 
       const newList = state.dictionaryList.filter((i, idx) => {
-        return parseInt(action.idx) !== idx;
+        return action.payload !== i.id;
       });
 
-      return state;
+      return {
+        ...state,
+        dictionaryList: newList,
+      };
     }
     case LOAD: {
       return {
